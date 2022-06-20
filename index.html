@@ -239,11 +239,11 @@
             </div>
         </div>
 
-        <div class="col">
+        <div class="flex-col">
             <div class="flex flex-col mx-4 mt-4">
                 <p class="title text-xl font-medium mb-2 mt-4 mx-auto uppercase">Các sản phẩm tiêu biểu</p>
                 <div class="underline mx-auto"></div>
-                <div class="flex mt-4 mb-4">
+                <div class="flex mt-4 mb-4 w-full">
                     <div class="carousel relative shadow-2xl w-full">
                         <div class="carousel-inner relative overflow-hidden w-full">
                             <!--Slide 1-->
@@ -397,10 +397,215 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full flex flex-col">
-            <div class="flex flex-col rightPart">
-                <p class="titleBlock text-xl text-white uppercase">Video clip </p>
-                <div class="underline my-2"></div>
+
+        <div class="w-full flex flex-col mb-8">
+            <div class="flex flex-col mx-auto mt-6">
+                <p class="titleBlock text-xl uppercase text-center">Video clip đá tâm nguyện</p>
+                <div class="underline my-2 mx-auto"></div>
+                <div class="flex mt-4 mx-auto">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/r9jwGansp1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="flex mt-4">
+                    <div class="mx-6">
+                        <p class="text-xs text-center font-medium uppercase my-2">Thi công thiết kế, xây dựng khuôn viên lăng mộ đá cho dòng họ, gia đình</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col mt-4  bg-about-us">
+            <p class="title text-xl font-medium mb-2 mt-6 mx-auto">Khách hàng nói về chúng tôi</p>
+            <div class="underline mx-auto"></div>
+            <p class="mb-4 mt-4 mx-6">Đối với chúng tôi, chất lượng sản phẩm luôn được đặt lên hàng đầu. Nhiều năm hoạt động, sự thành công trên con đường tạo ra Lăng mộ đá của hơn 50.000 Sản phẩm chính là minh chứng rõ ràng nhất cho chất lượng tuyệt vời của ĐÁ TÂM NGUYỆN.</p>
+
+            <div class="flex mt-4 mb-4">
+                <div class="carousel-about-us relative shadow-2xl w-full">
+                    <div class="carousel-inner relative overflow-hidden w-full">
+                        <!--Slide 1-->
+                        <input class="carousel-open" type="radio" id="carousel-about-us-1" name="carousel-about-us" aria-hidden="true" hidden="" checked="checked">
+                        <div class="carousel-item absolute opacity-0">
+                            <div class="flex mx-4">
+                                <div class="detailCusTalkUsBlock">
+                                    <div class="imgCustomer">
+                                        <img alt="customer_3" loading="lazy" src="/assets/img/upload/customer_1.png">
+                                    </div>
+                                    <div class="imgStar">
+                                        <img alt="fiveStar" loading="lazy" src="/assets/img/upload/fiveStar.png">
+                                    </div>
+                                    <div class="textPart">
+                                        <p class="nameCus">Đỗ Đức Tứ</p>
+                                        <p class="addressCus">Giám Đốc - Công Ty Cổ Phần Xây Dựng Giao Thông Tỉnh Yên Bái</p>
+                                        <p class="feedbackCus">Thông qua bạn bè tôi đã biết đến doanh nghiệp Đá Tâm Nguyện, tôi thấy rất hài lòng về chất lượng phục vụ và đội ngũ kỹ thuật rất chuyên nghiệp,khi có dịp tôi sẽ giới thiệu cho bạn bè biết đến và trải nhiệm dịch vụ của công ty. Cảm ơn các bạn rất nhiều. Xin chúc công ty ngày càng lớn mạnh và phát triển!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="carousel-about-us-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-5 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-about-us-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-5 inset-y-0 right-0 my-auto">›</label>
+
+                        <!--Slide 2-->
+                        <input class="carousel-open" type="radio" id="carousel-about-us-2" name="carousel-about-us" aria-hidden="true" hidden="">
+
+                        <div class="carousel-item absolute opacity-0">
+                            <div class="flex mx-4">
+                                <div class="detailCusTalkUsBlock">
+                                    <div class="imgCustomer">
+                                        <img alt="customer_3" loading="lazy" src="/assets/img/upload/customer_2.png">
+                                    </div>
+                                    <div class="imgStar">
+                                        <img alt="fiveStar" loading="lazy" src="/assets/img/upload/fiveStar.png">
+                                    </div>
+                                    <div class="textPart">
+                                        <p class="nameCus">Bác Khuê</p>
+                                        <p class="addressCus">ở Thanh Chương Nghệ An</p>
+                                        <p class="feedbackCus">Tôi năm nay cũng đã ngoài ngũ tuần, nên cũng muốn báo hiếu ông bà, tổ tiên. Nên tôi quyết định cải tổ lại khu lăng mộ đá gia đình tôi. Khi tôi liên hệ, các bạn rất nhiệt tình, chạy từ Ninh Bình vào tận Nghệ An để tư vấn và đo đạc. Tôi làm lăng mộ đá xanh rêu. Điều làm tôi ưng ý nhất là đá rất đều màu, không nứt vỡ. Còn hoa văn thì tuyệt vời, đẹp đến từng chi tiết.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="carousel-about-us-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-about-us-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                        <!--Slide 3-->
+                        <input class="carousel-open" type="radio" id="carousel-about-us-3" name="carousel-about-us" aria-hidden="true" hidden="">
+                        <div class="carousel-item absolute opacity-0">
+                            <div class="flex mx-4">
+                                <div class="detailCusTalkUsBlock">
+                                    <div class="imgCustomer">
+                                        <img alt="customer_3" loading="lazy" src="/assets/img/upload/customer_3.png">
+                                    </div>
+                                    <div class="imgStar">
+                                        <img alt="fiveStar" loading="lazy" src="/assets/img/upload/fiveStar.png">
+                                    </div>
+                                    <div class="textPart">
+                                        <p class="nameCus">Nguyễn Thanh Phong</p>
+                                        <p class="addressCus">Giám Đốc Chi Nhánh Ngân Hàng BIDV</p>
+                                        <p class="feedbackCus">Tôi thực sự rất ưng ý khi Đá Tâm Nguyện hoàn thành khu lăng mộ đá cho họ nhà tôi. Tôi là một người con xa quê, nên tôi rất mong muốn có thể đóng góp cho dòng họ, cũng coi như là báo hiếu tổ tiên. Vì vậy, tôi đã họp lại với trưởng tộc và anh em, quyết định xây lăng mộ cho cả họ. Tôi rất ưng bản thiết kế cũng như hoa văn mà Đá Tâm Nguyện đã thi công cho khu lăng mộ nhà chúng tôi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="carousel-about-us-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-about-us-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                        <!-- Add additional indicators for each slide-->
+                        <!--                        <ol class="carousel-indicators">-->
+                        <!--                            <li class="inline-block mr-3">-->
+                        <!--                                <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="inline-block mr-3">-->
+                        <!--                                <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="inline-block mr-3">-->
+                        <!--                                <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>-->
+                        <!--                            </li>-->
+                        <!--                        </ol>-->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col w-full bg-[#0f2446]">
+            <div class="flex secRegistration">
+                <div class="blockRegistration w-9/10">
+                    <p class="titleBlock ">ĐĂNG KÝ NHẬN TƯ VẤN</p>
+                    <div class="flex">
+                        <div class="flex flex-col w-full">
+                            <div class="form-group text-center">
+                                <input class="form-control" id="name1" placeholder="Họ tên" type="text">
+                                <div class="val_name1"></div>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="phone1" placeholder="Số điện thoại" type="text">
+                                <div class="val_phone1"></div>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="address1" placeholder="Địa chỉ" type="text">
+                                <div class="val_address1"></div>
+                            </div>
+                            <button class="bg-currentColor hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-28 mx-auto">
+                                Gửi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-col mx-2 padding-top-320-px">
+                    <p class="text-white text-md font-medium mb-2">THÔNG TIN CÔNG TY</p>
+                    <div class="flex flex-col">
+                        <p class="text-white text1 my-1">
+                            <b>Xưởng Chế Tác:</b>
+                        </p>
+                        <a href="https://goo.gl/maps/xmkGYZVCZBLs6KKDA" rel="nofollow" target="_blank">
+                            <p class="text-white text1 my-1">- 561 Nguyễn Huệ, Nam Bình, Ninh Bình</p>
+                        </a>
+                        <p class="text-white text1 my-1">- Thôn Đồng Quan – Xã Ninh Vân – Huyện Hoa Lư – Ninh Bình</p>
+                        <a href="https://goo.gl/maps/UyEwvNDX8V3MeFz77" rel="nofollow" target="_blank">
+                            <p class="text-white mb-1">
+                                <b>VPDD:</b>
+                                Toà nhà Season Avenue, Làng việt kiều châu âu – Mỗ Lao – Hà Đông – HN.
+                            </p>
+                        </a>
+                        <p class="text-white text1 my-1">
+                            <a href="tel:0865686892">
+                                <b>Hotline:</b>
+                                0865.68.68.92
+                            </a>
+                        </p>
+                        <p class="text-white text1 my-1">
+                            <a href="mailto:damynghetamnguyen@gmail.com">
+                                <b>Email:</b>
+                                damynghetamnguyen@gmail.com
+                            </a>
+                        </p>
+                        <p class="text-white text1 my-1">
+                            <a href="https://datamnguyen.vn">
+                                <b>Website:</b>
+                                https://datamnguyen.vn
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <div class="flex-col mx-2 w-full">
+                    <p class="text-white text-md font-medium mb-2">THÔNG TIN HỖ TRỢ</p>
+                    <div class="flex-col w-full">
+                        <ul>
+                            <li>
+                                <a class="text-white text1 my-1 mx-2 link" href="/gioi-thieu/">Giới Thiệu</a>
+                            </li>
+                            <li>
+                                <a class="text-white text1 my-1 mx-2 link" href="/mo-da/">Mộ Đá</a>
+                            </li>
+                            <li>
+                                <a class="text-white text1 my-1 mx-2 link" href="/lang-mo-da/">Lăng Mộ Đá</a>
+                            </li>
+                            <li>
+                                <a class="text-white text1 my-1 mx-2 link" href="/lien-he/">Liên Hệ</a>
+                            </li>
+                        </ul>
+                        <img alt="bo_cong_thuong" src="/assets/img/logo/bo_cong_thuong.png" class="width-200-px my-2">
+                        <a class="dmca-badge" href="https://www.dmca.com/Protection/Status.aspx?ID=93a55eee-bb80-4a4e-a873-8302b1e8ab72&amp;refurl=https://datamnguyen.vn/" target="_blank" title="DMCA.com Protection Status">
+                            <img alt="DMCA.com Protection Status" class="width-200-px my-2" src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=93a55eee-bb80-4a4e-a873-8302b1e8ab72">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <div class="flex flex-col">
+                    <p class="text-white text-md font-medium mb-2 ml-2">KẾT NỐI VỚI ĐÁ TÂM NGUYỆN</p>
+                    <div class="flex ml-2 my-4">
+                        <a href="https://www.facebook.com/damynghetamnguyen/">
+                            <img alt="fanpage" src="/assets/img/upload/fanpage.png">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -434,6 +639,7 @@
             </div>
         </div>
     </div>
+
     <div id="bottom-navigation" class="sticky inset-x-0 bottom-0 z-10 bg-gray shadow h-16 mb:display md:display-none">
         <div id="tabs" class="flex justify-between">
             <a href="#" class="w-full justify-center inline-block text-center">
@@ -535,6 +741,15 @@
         background-size: cover;
     }
 
+    .bg-about-us {
+        background-image: url('assets/img/background/background1.jpeg');
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: cover;
+        padding-bottom: 120px;
+    }
+
     .underline {
         width: 6rem;
         border-bottom: 3px solid #f8af68;
@@ -595,6 +810,18 @@
         color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
     }
 
+    #carousel-about-us-1:checked ~ .control-1,
+    #carousel-about-us-2:checked ~ .control-2,
+    #carousel-about-us-3:checked ~ .control-3 {
+        display: block;
+    }
+
+    #carousel-about-us-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-about-us-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-about-us-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+        color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+    }
+
     .rightPart {
         background-color: rgba(0,90,128,.7);
         padding: 20px 15px;
@@ -628,6 +855,93 @@
     }
     .max-height-400 {
         max-height: 420px;
+    }
+
+    .detailCusTalkUsBlock {
+        position: relative;
+        padding-top: 4rem;
+    }
+
+    .imgCustomer {
+        position: absolute;
+        width: 8rem;
+        top: 0;
+        left: 15px;
+    }
+
+    .imgStar {
+        text-align: right;
+        background-color: #fff;
+        padding-top: 2rem;
+        padding-right: 1rem;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .imgStar img {
+        width: 5rem!important;
+        display: inline-block!important;
+    }
+
+    .textPart {
+        background-color: #fff;
+        padding: 15px 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .secRegistration {
+        position: relative;
+    }
+
+    .blockRegistration {
+        padding: 30px 15px;
+        border-radius: 15px;
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        background-color: #fff;
+    }
+
+    .text1 {
+        font-size: 13px;
+        letter-spacing: .3px;
+    }
+
+    .padding-top-320-px {
+        padding-top: 320px;
+    }
+
+    .titleBlock {
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        text-align: center;
+        color: #005a80;
+    }
+
+    .blockRegistration .form-control {
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid #f8af68;
+    }
+
+    .blockRegistration .form-group {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .width-200-px {
+        width: 200px;
+    }
+
+    .link {
+        padding: 7px 10px 7px 15px;
+        display: block;
+        border-bottom: 1px dashed #f8af68;
     }
 </style>
 </html>
