@@ -131,7 +131,24 @@
                 <a href="pages/intro.html" class="text-md uppercase font-medium">Giới thiệu</a>
             </div>
             <div class="menuItem hover:text-white hover:bg-currentColor">
-                <a href="pages/product.html" class="text-md uppercase font-medium">Sản phẩm</a>
+                <div class="flex flex-row">
+                    <a href="pages/product.html" class="text-md uppercase font-medium">Sản phẩm</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-gray-dark"   viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+                <div class="flex">
+                    <ul class="blockMenuHover">
+                        <li>
+                            <a class="link2" href="#">Sản phẩm 1</a>
+                        </li>
+                        <li>
+                            <a class="link2" href="#">Sản phẩm 2</a>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
             <div class="menuItem hover:text-white hover:bg-currentColor">
                 <a href="pages/new.html" class="text-md uppercase font-medium">Tin Tức</a>
@@ -1414,11 +1431,46 @@
 </div>
 <div id="sideNav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#" class="text-xl">Trang chủ</a>
-    <a href="pages/intro.html" class="text-xl">Giới thiệu</a>
-    <a href="pages/product.html" class="text-xl">Sản Phẩm</a>
-    <a href="pages/new.html" class="text-xl">Tin tức</a>
-    <a href="pages/contact.html" class="text-xl">Liên hệ</a>
+    <div>
+        <a href="#" class="text-xl">Trang chủ</a>
+    </div>
+    <div>
+        <a href="pages/intro.html" class="text-xl">Giới thiệu</a>
+    </div>
+    <div class="flex-col">
+        <div class="flex flex-row justify-between">
+            <div class="flex">
+                <a href="pages/product.html" class="text-xl">Sản Phẩm</a>
+            </div>
+            <div class="flex mx-2 my-2">
+                <button onclick="openSubMenu()" class="buttonOpenBlockLv3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-gray-dark"   viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <button onclick="openCloseMenu()" class="buttonCloseBlockLv3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-gray-dark" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul class="blockLevel3" id="blockLevel3">
+            <li>
+                <a class="link2" href="#">Sản phẩm 1</a>
+            </li>
+            <li>
+                <a class="link2" href="#">Sản phẩm 2</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="pages/new.html" class="text-xl">Tin tức</a>
+    </div>
+    <div>
+        <a href="pages/contact.html" class="text-xl">Liên hệ</a>
+
+    </div>
 </div>
 </body>
 <script>
@@ -1429,6 +1481,20 @@
     function closeNav() {
         document.getElementById("sideNav").style.width = "0";
     }
+
+    function openSubMenu() {
+        console.log('open');
+        document.getElementById("blockLevel3").style.display = 'block';
+        document.getElementsByClassName("buttonOpenBlockLv3")[0].style.display = 'none';
+        document.getElementsByClassName("buttonCloseBlockLv3")[0].style.display = 'block';
+    }
+
+    function openCloseMenu() {
+        document.getElementById("blockLevel3").style.display = 'none';
+        document.getElementsByClassName("buttonOpenBlockLv3")[0].style.display = 'block';
+        document.getElementsByClassName("buttonCloseBlockLv3")[0].style.display = 'none';
+    }
+
 </script>
 <style>
     .sidenav {
@@ -1624,6 +1690,7 @@
 
     .menuItem {
         padding: 15px 20px 2px;
+        position: relative;
     }
     .max-height-400 {
         max-height: 420px;
@@ -1811,6 +1878,68 @@
         padding-top: 10px;
         color: #aaa;
         font-size: 13px;
+    }
+    .blockLevel3 {
+        width: 100%;
+        padding-left: 1.5rem;
+        display: none;
+    }
+
+    .buttonCloseBlockLv3 {
+        display: none;
+    }
+
+    .blockMenuHover {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid;
+        display: none;
+        animation: appeared3 .5s;
+    }
+
+    .menuItem ul {
+        padding: 0;
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+        border-top: 1px solid #d7d7d7;
+    }
+
+    .menuItem ul li {
+        list-style: none;
+        width: 30vh;
+        font-size: 20px;
+        border-bottom: 1px solid #d7d7d7;
+        margin-bottom: 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 15px;
+    }
+
+    .menuItem ul li a {
+        transition: all .25s;
+        color: #333;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .menuItem ul li a:hover {
+        transition: all .25s;
+        color: #f8af68;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+
+    .menuItem:hover .blockMenuHover {
+        display: block;
+    }
+
+    .menuItem:hover svg{
+        fill: #f1f1f1;
     }
 </style>
 </html>
